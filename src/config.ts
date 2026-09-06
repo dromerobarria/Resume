@@ -167,6 +167,11 @@ export const config = {
       tech: ['Swift', 'SwiftUI', 'StoreKit'],
       appStoreUrl: 'https://apps.apple.com/cl/app/subsight/id6746824760',
     },
+    {
+      name: 'DockSwitcher',
+      description: 'Indie macOS menu bar app to save Dock layouts as profiles and switch between them in one click, with global hotkeys, Focus mode automation, and Shortcuts actions.',
+      tech: ['Swift', 'SwiftUI', 'AppKit', 'App Intents'],
+    },
   ],
 
   skills: {
