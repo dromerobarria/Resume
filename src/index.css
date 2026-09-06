@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-mono: 'JetBrains Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  --color-xcode-bg: #1e1e1e;
+  --color-xcode-sidebar: #252526;
+  --color-xcode-editor: #1e1e1e;
+  --color-xcode-toolbar: #323233;
+  --color-xcode-border: #3c3c3c;
+  --color-xcode-text: #d4d4d4;
+  --color-xcode-text-dim: #858585;
+  --color-xcode-accent: #0a84ff;
+  --color-xcode-keyword: #fc5fa3;
+  --color-xcode-type: #5dd8ff;
+  --color-xcode-string: #fc6a5d;
+  --color-xcode-comment: #6c7986;
+  --color-xcode-func: #a167e6;
+  --color-xcode-number: #d0bf69;
+  --color-xcode-property: #41a1c0;
+  --color-xcode-console-bg: #1a1a1a;
+  --color-xcode-statusbar: #007acc;
+  --color-xcode-selection: #2559d7;
+
+  --color-light-bg: #ffffff;
+  --color-light-sidebar: #f3f3f3;
+  --color-light-editor: #ffffff;
+  --color-light-toolbar: #e8e8e8;
+  --color-light-border: #d4d4d4;
+  --color-light-text: #1e1e1e;
+  --color-light-text-dim: #6e6e6e;
+  --color-light-keyword: #ad3da4;
+  --color-light-type: #0b4f79;
+  --color-light-string: #c41a16;
+  --color-light-comment: #536579;
+  --color-light-func: #6c36a9;
+  --color-light-number: #1c00cf;
+  --color-light-property: #326d74;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'JetBrains Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+}
+
+::selection {
+  background-color: rgba(10, 132, 255, 0.3);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* macOS Desktop Wallpapers */
+.desktop-dark {
+  background:
+    radial-gradient(ellipse at 20% 50%, #1a1a4e 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, #2d1b69 0%, transparent 40%),
+    radial-gradient(ellipse at 60% 80%, #0f2744 0%, transparent 50%),
+    radial-gradient(ellipse at 40% 30%, #1e0a3c 0%, transparent 60%),
+    linear-gradient(135deg, #0a0a1a 0%, #0d1117 50%, #0a0e1a 100%);
+}
+
+.desktop-light {
+  background:
+    radial-gradient(ellipse at 25% 50%, #a8d8ea 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 30%, #c7b8ea 0%, transparent 40%),
+    radial-gradient(ellipse at 50% 80%, #f0c4a8 0%, transparent 50%),
+    linear-gradient(135deg, #dde5f0 0%, #e8dff0 50%, #f0e0d0 100%);
+}
+
+/* macOS icon squircle shape */
+.icon-squircle {
+  border-radius: 22%;
+}
+
+/* Dock glass effect */
+.dock-glass-dark {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+}
+
+.dock-glass-light {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+}
