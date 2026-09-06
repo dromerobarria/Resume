@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import { config } from '../config';
+import dockSwitcherIcon from '../assets/dockswitcher.png';
 
 interface DockItemConfig {
   id: string;
@@ -58,6 +59,14 @@ const dockItems: DockItemConfig[] = [
     href: 'https://apps.apple.com/cl/developer/daniel-romero/id893059976',
     gradient: '',
     iconUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f7/db/94/f7db9418-3cfc-81e8-9304-fc13ce9fabe2/AppIcon-Release-0-1x_U007epad-0-0-0-1-0-85-220-0.png/512x512bb.jpg',
+    icon: null,
+  },
+  {
+    id: 'dockswitcher',
+    label: 'DockSwitcher',
+    href: 'https://dockswitcher.lemonsqueezy.com',
+    gradient: '',
+    iconUrl: dockSwitcherIcon,
     icon: null,
   },
   {
@@ -129,8 +138,8 @@ const dockItems: DockItemConfig[] = [
   },
 ];
 
-// Separator goes after the personal apps group (index 6 = Terminal, first social item)
-const SEPARATOR_INDEX = 7;
+// Separator goes after the personal apps group (index 8 = Terminal, first social item)
+const SEPARATOR_INDEX = 8;
 
 interface DockIconProps {
   mouseX: ReturnType<typeof useMotionValue<number>>;
