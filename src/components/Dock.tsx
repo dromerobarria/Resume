@@ -64,7 +64,7 @@ const dockItems: DockItemConfig[] = [
   {
     id: 'dockswitcher',
     label: 'DockSwitcher',
-    href: 'https://dockswitcher.lemonsqueezy.com',
+    href: 'https://dockswitcher-landing.vercel.app/',
     gradient: '',
     iconUrl: dockSwitcherIcon,
     icon: null,
