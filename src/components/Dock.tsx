@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import { config } from '../config';
 import dockSwitcherIcon from '../assets/dockswitcher.png';
+import fuelIcon from '../assets/fuel.svg';
 
 interface DockItemConfig {
   id: string;
@@ -67,6 +68,14 @@ const dockItems: DockItemConfig[] = [
     href: 'https://dockswitcher-landing.vercel.app/',
     gradient: '',
     iconUrl: dockSwitcherIcon,
+    icon: null,
+  },
+  {
+    id: 'fuel',
+    label: 'Fuel',
+    href: 'https://fuel-landing-hazel.vercel.app/',
+    gradient: '',
+    iconUrl: fuelIcon,
     icon: null,
   },
   {
@@ -138,8 +147,8 @@ const dockItems: DockItemConfig[] = [
   },
 ];
 
-// Separator goes after the personal apps group (index 8 = Terminal, first social item)
-const SEPARATOR_INDEX = 8;
+// Separator goes after the personal apps group (index 9 = Terminal, first social item)
+const SEPARATOR_INDEX = 9;
 
 interface DockIconProps {
   mouseX: ReturnType<typeof useMotionValue<number>>;

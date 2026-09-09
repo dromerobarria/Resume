@@ -172,6 +172,11 @@ export const config = {
       description: 'Indie macOS menu bar app to save Dock layouts as profiles and switch between them in one click, with global hotkeys, Focus mode automation, and Shortcuts actions.',
       tech: ['Swift', 'SwiftUI', 'AppKit', 'App Intents'],
     },
+    {
+      name: 'Fuel',
+      description: 'Indie macOS menu bar app that tracks AI token usage, costs, and rate limits in real time across Claude, OpenAI, Gemini, and Cursor.',
+      tech: ['Swift', 'SwiftUI', 'AppKit', 'Menu Bar'],
+    },
   ],
 
   skills: {
